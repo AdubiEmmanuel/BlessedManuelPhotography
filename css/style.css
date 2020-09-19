@@ -18,6 +18,10 @@
     line-height: 1.4;
   }
 
+
+
+
+
   .btn{
     background: var(--dark);
     color:var(--light);
@@ -89,7 +93,23 @@
     font-size: 4rem;
     margin-bottom: 0;
     color:var(--light);
+    animation: char 3s steps(16);
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    border-right: 4px solid white;
   }
+
+  @keyframes char {
+    0%{
+      width: 0ch;
+    }
+    100%{
+      width: 16ch;
+    }
+  }
+
+
 
   .showcase p{
     font-size: 1.3rem;
